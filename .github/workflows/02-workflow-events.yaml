@@ -1,6 +1,9 @@
 name: 02-workflowevents
 
-on: push
+on: 
+  workflow_dispatch:
+  schedule: 
+    -cron: '*/5 * * * *'
 
 jobs:
   echo: 
